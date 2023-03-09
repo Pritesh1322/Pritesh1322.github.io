@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="style(2).css"> -->
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                
+            </div>
+            <form action="" class="input-group" id="login">
+                <input type="text"  class="input-field" placeholder="User Name" name="" id="" required>
+                <input type="password"  class="input-field" placeholder="Enter password" name="" id="" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log-In</button>
+            </form>
+            <form action="" class="input-group" id="register">
+                <input type="text"  class="input-field" placeholder="User Name" name="" id="" required>
+                <input type="email"  class="input-field" placeholder="Email Id" name="" id="" required>
+                <input type="password"  class="input-field" placeholder="Set Password" name="" id="" required>
+                <input type="password"  class="input-field" placeholder="Confirm Password" name="" id="" required>
+                <input type="address"  class="input-field" placeholder="Address" name="" id="" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn2">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "7px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "7px";
+            y.style.left = "400px";
+            z.style.left = "0px";
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
